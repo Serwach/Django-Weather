@@ -37,8 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'weather'
+    'weather',
+    'graphene_django'
 ]
+
+GRAPHENE = {
+    "SCHEMA": "weather.schema.schema"
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
